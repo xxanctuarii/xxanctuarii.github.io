@@ -1,0 +1,42 @@
+/*Menu Bar*/
+.page-header {
+  border-bottom: solid #c2deea 1px;
+  /*height: 50px;*/
+  vertical-align: bottom;
+  margin-top: 1vh;
+  padding-bottom: 1vh;
+}
+.page-header * {
+  display: inline;
+}
+.menu-button {
+  width: 2vh;
+  border: 0;
+  margin-right: 0.5vw;
+  cursor: pointer;
+}
+.page-title {
+  color: #00a1de;
+  font-size: 2vh;
+}
+.page-header li {
+  margin: 1.5vh;
+  font-size: 1.5vh;
+}
+.page-header li.active {
+  color: #e37222;
+}
+.dit {
+  color: #00a1de;
+  font-size: 1.5vh;
+  position: absolute;
+  top: 15px;
+  right: 5em;
+}
+.klm-logo {
+  width: 5vh;
+  border: 0;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
