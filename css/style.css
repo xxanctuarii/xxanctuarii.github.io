@@ -1,0 +1,140 @@
+/*
+
+Menu Bar
+
+- .page-header = main style
+- .menu-button = left hamburger control
+- .page-title = main title
+- .dit = right side title
+
+*/
+
+/* Main */
+.page-header {
+  border-bottom: solid #c2deea 1px;
+  vertical-align: bottom;
+  padding: 1vh 0 0.5vh 0;
+  position: fixed;
+  top: 50px;
+  width: 97.5vw;
+  height: 28px;
+}
+@media screen and (max-height: 768px) {
+  .page-header {
+      height: 20px;
+      width: 96.5vw; 
+    }
+}
+.page-header * {
+  display: inline;
+}
+.page-header li {
+  margin: 1.5vh;
+  font-size: 1.5vh;
+}
+.page-header li.active {
+  color: #e37222;
+}
+
+/* Sidebar button & main title */
+.menu-button {
+  width: 2vh;
+  border: 0;
+  margin-right: 0.5vw;
+  cursor: pointer;
+}
+.page-title {
+  color: #00a1de;
+  font-size: 2vh;
+}
+
+/* Data integrity title & klm logo */
+.dit {
+  color: #00a1de;
+  font-size: 1.5vh;
+  position: absolute;
+  top: 1.5vh;
+  right: 5em;
+}
+.klm-logo {
+  width: 5vh;
+  border: 0;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+/* Fullscreen buttons */
+.resize {
+ color: #fff;
+ padding: 0.5vh;
+ background-color:#00a1de;
+ border:0;
+ border-radius: 5px;
+}
+.resize:hover {
+ background-color:#005B82;
+ cursor:pointer;
+}
+.resize img {
+ width: 1vh;
+}
+/* Used to hide one of the buttons with javascript */
+.hide {
+ position: absolute !important;
+ top: -9999px !important;
+ left: -9999px !important;
+}
+
+/* Data Header */
+#dataheader {
+  position: fixed;
+  top: 10vh;
+}
+@media screen and (max-height: 768px) {
+  #dataheader {
+      top: 13vh;
+    }
+}
+
+/*
+
+Sidebar
+
+*/
+#sidebar {
+  position:fixed;
+  top: 40px;
+  left: 8px;
+  width: 250px;
+  height: 89.5vh;
+  padding: 20px;
+  z-index: 1;
+  transform: translateX(-300px);
+  transition: transform 250ms ease-in-out;
+  background-color:#C2DEEA;
+}
+#sidebar p {
+  margin-top:10px;
+  font-color:#fff;
+}
+
+/*
+
+Spotfire Action Buttons
+
+*/
+.sfc-action-button {
+  color:#fff!important;
+  font-family: "KLM Noa Regular"!important;
+  background-color: #E37222 !important;
+  background-image: none !important;
+  border: 0px #fff solid !important;
+  border-radius: 2px !important;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+  height: 26px !important;
+}
+.sfc-action-button:hover {
+  background-color: #005B82 !important;
+}
